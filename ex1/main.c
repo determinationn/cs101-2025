@@ -12,10 +12,6 @@ int main() {
     float arr_read_float[3];
 
     fp = fopen("a.bin", "wb+");
-    if (fp == NULL) {
-        printf("無法開啟檔案！\n");
-        return 1;
-    }
 
     fwrite(arr_write_int, sizeof(int), 3, fp);
     fwrite(arr_write_char, sizeof(char), 3, fp);
