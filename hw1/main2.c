@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+#define MAX_LEN 100
+
 int main() {
-    char input[] = "A4B1C3f3";
+    char input[MAX_LEN];
+
+    scanf("%s", input);
     
     for (int i = 0; input[i] != '\0'; i += 2) {
         char ch = input[i];
@@ -13,6 +17,6 @@ int main() {
         }
     }
     printf("\n");
-    
+  
     return 0;
 }
